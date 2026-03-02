@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan | Creative Director & Developer</title>
+    <meta name="description" content="A premium, monochrome creative director portfolio by Ishan.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Noise Background -->
+    <div class="noise-bg"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">ISHAN<span>.</span></a>
+            </div>
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="text-label reveal-up">Creative Director & Developer</p>
+                    <h1 class="hero-name reveal-up" style="transition-delay: 0.2s;">
+                        ISHAN <br>
+                        <span class="last-name">DEVELOPER</span>
+                    </h1>
+                    <p class="hero-tagline reveal-up" style="transition-delay: 0.4s;">
+                        Refining digital experiences for luxury brands through architectural precision and minimalist elegance.
+                    </p>
+                    <div class="hero-actions reveal-up" style="transition-delay: 0.6s;">
+                        <a href="#work" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-side reveal-left">
+                        <div class="image-wrapper">
+                            <div class="image-placeholder"></div>
+                            <div class="image-frame"></div>
+                        </div>
+                    </div>
+                    <div class="about-text-side reveal-right">
+                        <p class="text-label">Est. 2018</p>
+                        <h2 class="section-title">The Art of <br>Minimal Complexity</h2>
+                        <div class="about-description">
+                            <p>I am Ishan, a creative director specializing in the intersection of luxury aesthetics and technical performance. I help brands carve their digital identities through meticulous design and refined code.</p>
+                            <p>My approach is editorial: I prioritize negative space, balanced composition, and subtle interactions that reward the curious user.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">06</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <p class="text-label">Expertise</p>
+                    <h2 class="section-title">Capabilities</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal-up">
+                        <h3>Interface</h3>
+                        <p>Clean, minimalist UI with high attention to pixel-perfect detail.</p>
+                    </div>
+                    <div class="skill-card reveal-up">
+                        <h3>Architecture</h3>
+                        <p>System design and scalable frontend patterns for modern web.</p>
+                    </div>
+                    <div class="skill-card reveal-up">
+                        <h3>Interaction</h3>
+                        <p>Smooth, cinematic motion and micro-interactions.</p>
+                    </div>
+                    <div class="skill-card reveal-up">
+                        <h3>Branding</h3>
+                        <p>Visual identity and cohesive aesthetic systems for luxury brands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="work" class="projects">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <p class="text-label">Portfolio</p>
+                    <h2 class="section-title">Selected Works</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project Item -->
+                    <div class="project-item reveal-up">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder"></div>
+                            <div class="project-overlay">
+                                <p class="project-category">Luxury Fashion</p>
+                                <h3 class="project-title">Ethereal Maison</h3>
+                                <a href="#" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="project-item reveal-up">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder"></div>
+                            <div class="project-overlay">
+                                <p class="project-category">Motion Design</p>
+                                <h3 class="project-title">Nexus Studio</h3>
+                                <a href="#" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="project-item reveal-up">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder"></div>
+                            <div class="project-overlay">
+                                <p class="project-category">Architecture</p>
+                                <h3 class="project-title">Aura Interiors</h3>
+                                <a href="#" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <p class="text-label">Journey</p>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-line" id="timelineLine"></div>
+                    <div class="timeline-bg-line"></div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023 - Present</span>
+                            <h3 class="timeline-role">Creative Director</h3>
+                            <h4 class="timeline-company">Noir Digital</h4>
+                            <p>Leading brand identity for global luxury fashion houses.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021 - 2023</span>
+                            <h3 class="timeline-role">Senior Designer</h3>
+                            <h4 class="timeline-company">Minimalist Studio</h4>
+                            <p>Crafting editorial digital experiences for boutique agencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal-left">
+                        <p class="text-label">Get In Touch</p>
+                        <h2 class="section-title">Let's build something <br>timeless.</h2>
+                        <p class="contact-desc">Currently accepting new projects and collaborations.</p>
+                        <div class="contact-details">
+                            <p>ishanajith894@gmail.com</p>
+                            <p>New York, NY</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-side reveal-right">
+                        <form class="contact-form">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="alex@example.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Message</label>
+                                <textarea placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-divider"></div>
+        <div class="container footer-container">
+            <div class="footer-content reveal-up">
+                <div class="footer-socials">
+                    <a href="https://instagram.com/ishatxt" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/ishatxt" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:ishanajith894@gmail.com" class="social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2026 Ishan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
