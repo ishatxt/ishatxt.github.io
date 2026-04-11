@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i++ — Ishan</title>
+    <meta name="description" content="Ishan — Creative Designer & Systems Programmer. The art of minimal complexity.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"><div class="scroll-bar" id="scrollBar"></div></div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">i<span class="logo-plus">++</span></a>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ═══ HERO ═══ -->
+        <section class="hero">
+            <div class="hero-bg-text" aria-hidden="true">ISHAN</div>
+            <div class="hero-content">
+                <div class="hero-eyebrow reveal-up">
+                    <span class="dot"></span>
+                    <span>Creative Designer &amp; Systems Programmer</span>
+                </div>
+                <h1 class="hero-heading reveal-up" style="--d:0.1s">
+                    <span class="line-wrap"><em>i</em><strong>++</strong></span>
+                </h1>
+                <p class="hero-sub reveal-up" style="--d:0.2s">
+                    Crafting at the intersection of <em>aesthetic precision</em><br>and low-level performance.
+                </p>
+                <div class="hero-cta reveal-up" style="--d:0.3s">
+                    <a href="#work" class="btn-pill">View Work <svg width="14" height="14" viewBox="0 0 14 14"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <a href="#contact" class="btn-ghost">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <div class="meta-item reveal-up" style="--d:0.5s">
+                    <span class="meta-num">4+</span>
+                    <span class="meta-label">Years</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item reveal-up" style="--d:0.6s">
+                    <span class="meta-num">100+</span>
+                    <span class="meta-label">Works</span>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item reveal-up" style="--d:0.7s">
+                    <span class="meta-num">∞</span>
+                    <span class="meta-label">Curiosity</span>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>scroll</span>
+                <div class="scroll-line-anim"></div>
+            </div>
+        </section>
+
+        <!-- ═══ MARQUEE ═══ -->
+        <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Poster Design</span><span class="sep">✦</span>
+                <span>Photography</span><span class="sep">✦</span>
+                <span>C++ / Rust</span><span class="sep">✦</span>
+                <span>Guitar</span><span class="sep">✦</span>
+                <span>Editorial</span><span class="sep">✦</span>
+                <span>Systems Programming</span><span class="sep">✦</span>
+                <span>Poster Design</span><span class="sep">✦</span>
+                <span>Photography</span><span class="sep">✦</span>
+                <span>C++ / Rust</span><span class="sep">✦</span>
+                <span>Guitar</span><span class="sep">✦</span>
+                <span>Editorial</span><span class="sep">✦</span>
+                <span>Systems Programming</span><span class="sep">✦</span>
+            </div>
+        </div>
+
+        <!-- ═══ ABOUT ═══ -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <div class="about-layout">
+                    <div class="about-left reveal-left">
+                        <div class="portrait-frame">
+                            <div class="portrait-placeholder">
+                                <div class="portrait-initials">I</div>
+                            </div>
+                            <div class="portrait-accent-line"></div>
+                            <div class="portrait-tag">
+                                <span class="tag-dot"></span>
+                                Available for projects
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right reveal-right">
+                        <p class="section-label">Est. 2023 — About</p>
+                        <h2 class="section-heading">The Art of<br><em>Minimal Complexity</em></h2>
+                        <div class="about-body">
+                            <p>I'm Ishan — a creative director and systems programmer who believes great work lives at the edge of restraint. I design with intention and code with precision.</p>
+                            <p>My work spans poster design, editorial photography, and performance-oriented C++/Rust development. I don't pick sides between art and engineering — I occupy the intersection.</p>
+                        </div>
+                        <div class="about-links">
+                            <a href="https://github.com/ishatxt" target="_blank" rel="noopener" class="text-link">GitHub ↗</a>
+                            <a href="https://instagram.com/ishatxt" target="_blank" rel="noopener" class="text-link">Instagram ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SKILLS ═══ -->
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <p class="section-label">Expertise</p>
+                    <h2 class="section-heading">Capabilities</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal-up" style="--d:0s">
+                        <div class="skill-num">01</div>
+                        <h3>Poster Design</h3>
+                        <p>Clean, minimalist design with high attention to pixel-perfect detail and typographic hierarchy.</p>
+                        <div class="skill-arrow">→</div>
+                    </div>
+                    <div class="skill-card reveal-up" style="--d:0.1s">
+                        <div class="skill-num">02</div>
+                        <h3>Photography</h3>
+                        <p>Artistic photography focused on composition, mood, and the interplay of light and shadow.</p>
+                        <div class="skill-arrow">→</div>
+                    </div>
+                    <div class="skill-card reveal-up" style="--d:0.2s">
+                        <div class="skill-num">03</div>
+                        <h3>C++ / Rust</h3>
+                        <p>Performance-oriented systems programming with a focus on memory safety, efficiency, and elegant architecture.</p>
+                        <div class="skill-arrow">→</div>
+                    </div>
+                    <div class="skill-card reveal-up" style="--d:0.3s">
+                        <div class="skill-num">04</div>
+                        <h3>Guitar</h3>
+                        <p>Skilled in acoustic and electric guitar — music informs my sense of rhythm, timing, and creative flow.</p>
+                        <div class="skill-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ WORK ═══ -->
+        <section id="work" class="work">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <p class="section-label">Portfolio</p>
+                    <h2 class="section-heading">Selected Works</h2>
+                </div>
+                <div class="works-list">
+
+                    <div class="work-item reveal-up" style="--d:0s">
+                        <div class="work-item-left">
+                            <span class="work-num">01</span>
+                            <div class="work-info">
+                                <p class="work-category">Poster Design</p>
+                                <h3 class="work-title">Urban Classic Designs</h3>
+                                <p class="work-desc">A series exploring brutalist urban architecture through minimalist poster compositions.</p>
+                            </div>
+                        </div>
+                        <div class="work-item-right">
+                            <div class="work-thumb">
+                                <div class="work-thumb-inner">
+                                    <div class="work-thumb-placeholder p1"></div>
+                                </div>
+                                <div class="work-overlay">
+                                    <a href="#" class="work-explore-btn">Explore ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item reveal-up" style="--d:0.1s">
+                        <div class="work-item-left">
+                            <span class="work-num">02</span>
+                            <div class="work-info">
+                                <p class="work-category">Website Design</p>
+                                <h3 class="work-title">Greek Style Website</h3>
+                                <p class="work-desc">Editorial digital experience drawing on classical aesthetics and modern interaction design.</p>
+                            </div>
+                        </div>
+                        <div class="work-item-right">
+                            <div class="work-thumb">
+                                <div class="work-thumb-inner">
+                                    <div class="work-thumb-placeholder p2"></div>
+                                </div>
+                                <div class="work-overlay">
+                                    <a href="#" class="work-explore-btn">Explore ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item reveal-up" style="--d:0.2s">
+                        <div class="work-item-left">
+                            <span class="work-num">03</span>
+                            <div class="work-info">
+                                <p class="work-category">C / C++ / Rust</p>
+                                <h3 class="work-title">i++ Text Editor</h3>
+                                <p class="work-desc">A terminal-native text editor built for speed — minimal dependencies, maximal control.</p>
+                            </div>
+                        </div>
+                        <div class="work-item-right">
+                            <div class="work-thumb">
+                                <div class="work-thumb-inner">
+                                    <div class="work-thumb-placeholder p3"></div>
+                                </div>
+                                <div class="work-overlay">
+                                    <a href="#" class="work-explore-btn">Explore ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ EXPERIENCE ═══ -->
+        <section id="experience" class="experience">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <p class="section-label">Journey</p>
+                    <h2 class="section-heading">Experience</h2>
+                </div>
+                <div class="exp-grid">
+                    <div class="exp-item reveal-up" style="--d:0s">
+                        <div class="exp-year">2023 — Present</div>
+                        <div class="exp-body">
+                            <h3 class="exp-role">Creative Director</h3>
+                            <p class="exp-company">Noir Digital</p>
+                            <p class="exp-desc">Leading brand identity for global luxury fashion houses. Overseeing visual language, art direction, and digital campaign execution.</p>
+                        </div>
+                        <div class="exp-badge">Active</div>
+                    </div>
+                    <div class="exp-item reveal-up" style="--d:0.15s">
+                        <div class="exp-year">2021 — 2023</div>
+                        <div class="exp-body">
+                            <h3 class="exp-role">Senior Designer</h3>
+                            <p class="exp-company">Minimalist Studio</p>
+                            <p class="exp-desc">Crafted editorial digital experiences for boutique agencies. Specialized in typographic systems and motion-restrained UI.</p>
+                        </div>
+                        <div class="exp-badge exp-badge-past">Past</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CONTACT ═══ -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="contact-layout">
+                    <div class="contact-left reveal-left">
+                        <p class="section-label">Get in Touch</p>
+                        <h2 class="section-heading">Let's build<br>something <em>timeless.</em></h2>
+                        <p class="contact-sub">Currently open to new projects and collabs.</p>
+                        <div class="contact-links-col">
+                            <a href="https://instagram.com/ishatxt" class="contact-row-link" target="_blank" rel="noopener">
+                                <span>Instagram</span>
+                                <span>↗</span>
+                            </a>
+                            <a href="https://github.com/ishatxt" class="contact-row-link" target="_blank" rel="noopener">
+                                <span>GitHub</span>
+                                <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-right reveal-right">
+                        <form class="form" id="contactForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea placeholder="Tell me about your project..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">
+                                <span>Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-logo">i++</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/ishatxt" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://github.com/ishatxt" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+            <p class="footer-copy">© 2026 Ishan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
