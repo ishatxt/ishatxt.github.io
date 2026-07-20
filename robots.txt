@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /js/vendor.js
+
+Sitemap: https://ishatxt.github.io/sitemap.xml

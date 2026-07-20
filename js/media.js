@@ -8,7 +8,9 @@ function preloader() {
   const headerBar = document.querySelector(".js-header-bar");
   if (!counter && !pageWrapper && !html && !preloaderInner && !headerBar)
     return;
-  const images = Array.from(document.images);
+  const images = Array.from(document.images).filter(
+    (img) => img.loading !== "lazy"
+  );
   const totalImages = images.length;
   let loadedCount = 0;
   let fontsReady = false;
@@ -17,7 +19,11 @@ function preloader() {
   let actualProgress = 0;
 
   function updateActualProgress() {
-    actualProgress = (loadedCount + (fontsReady ? 1 : 0)) / (totalImages + 1);
+    if (totalImages === 0) {
+      actualProgress = fontsReady ? 1 : 0;
+    } else {
+      actualProgress = (loadedCount + (fontsReady ? 1 : 0)) / (totalImages + 1);
+    }
     if (actualProgress > 1) actualProgress = 1;
   }
 
@@ -25,8 +31,8 @@ function preloader() {
     function step() {
       const elapsed = performance.now() - startTime;
       const timeProgress = Math.min(elapsed / MIN_LOADING_TIME, 1);
-      const progress = Math.min(timeProgress, actualProgress);
-      const percent = Math.floor(progress * 100);
+      const imagesReady = actualProgress >= 1;
+      const percent = Math.floor(timeProgress * 100);
       if (counter) {
         const formatted = `${percent < 10 ? "0" : " "}${percent}%`;
         counter.innerHTML = [...formatted]
@@ -34,6 +40,8 @@ function preloader() {
           .join("");
       }
       if (percent < 100) {
+        requestAnimationFrame(step);
+      } else if (!imagesReady) {
         requestAnimationFrame(step);
       } else {
         finishLoading();
