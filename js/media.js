@@ -8,9 +8,7 @@ function preloader() {
   const headerBar = document.querySelector(".js-header-bar");
   if (!counter && !pageWrapper && !html && !preloaderInner && !headerBar)
     return;
-  const images = Array.from(document.images).filter(
-    (img) => img.loading !== "lazy"
-  );
+  const images = Array.from(document.images);
   const totalImages = images.length;
   let loadedCount = 0;
   let fontsReady = false;
